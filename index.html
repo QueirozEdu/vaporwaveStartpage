@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="default vapor">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>~/startpage</title>
+	<link rel="icon" type="image/x-icon" href="assets/media/favicon/favicon.ico">
+	<link rel="icon" sizes="192x192" href="assets/media/favicon/android-chrome-192x192.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicon/apple-touch-icon.png">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body class="fade-in jquery search">
+	<div id="startpage" class="container">
+		<canvas id="canvas"></canvas>
+		<div class="container-inner">
+			<div class="left-container">
+				<h1 id="Date">&nbsp;</h1>
+
+				<div class="image border">
+					<a id="imaginator"></a>
+				</div>
+			</div>
+
+			<div class="right-container">
+
+				<div class="head">
+					<p>&gt; cd ~/<span class="blinking">_</span></p>
+				</div>
+
+				<div class="head-search">
+					<!-- Search actions:
+						https://duckduckgo.org/
+						https://www.google.com/search
+					-->
+					<form method="get" action="https://www.google.com/search" autocomplete="off" id="search">
+						<p>
+							<span class="prefix">&gt; search ~/</span>
+							<input class="search-field" id="search-input" type="text" type="text" name="q"
+								maxlength="100" />
+							<!--
+							<textarea class="search-field" id="search-textarea" wrap="soft" type="text" name="q" maxlength="100"></textarea>
+							-->
+							<span class="blinking">_</span>
+						</p>
+					</form>
+				</div>
+
+				<div class="bookmarks">
+					<div class="category">
+						<div class="links">
+							<ul>
+								<li class="title">daily</li>
+								<li><a href="https://mail.google.com/mail/u/1/#inbox">gmail</a></li>
+								<li><a href="https://web.whatsapp.com/">whatsapp</a></li>
+								<li><a href="https://www.reddit.com/">reddit</a></li>
+								<li><a href="https://drive.google.com/drive/u/1/my-drive">google drive</a></li>
+
+							</ul>
+						</div>
+					</div>
+
+					<div class="category">
+						<div class="links">
+							<ul>
+								<li class="title">entertainment</li>
+								<li><a href="https://www.youtube.com">youtube</a></li>
+								<li><a href="//192.168.15.100:8096">jellyfin</a></li>
+								<li><a
+										href="https://tv.apple.com/br/channel/tvs.sbd.4000?itscg=10000&itsct=atv-tv_op-nav_wch-ctr-210111">apple
+										tv</a></li>
+								<li><a href="https://play.hbomax.com/page/urn:hbo:page:home">hbo</a></li>
+								<li><a href="https://www.starplus.com/pt-br/welcome/stream-now">star+</a></li>
+								<li><a href="https://www.discoveryplus.com/br/">discovery+</a></li>
+								<li><a href="https://www.primevideo.com/?_encoding=UTF8&language=pt_BR">prime video</a>
+								</li>
+								<li><a href="https://www.disneyplus.com/pt-br">disney+</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="category">
+						<div class="links">
+							<ul>
+								<li class="title">sys admin</li>
+								<li><a href="http://192.168.86.9/admin/settings.php">pi-hole</a></li>
+								<li><a href="http://192.168.86.100:8096/web/index.html#!/dashboard.html">jellyfin
+										dashboard</a></li>
+								<li><a href="https://192.168.86.100:9090/">orion</a>
+								</li>
+								<li><a href="https://192.168.86.9:9090/">saturn</a>
+								<li><a href="http://neptune.local">neptune</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="category">
+						<div class="links">
+							<ul>
+								<li class="title">shopping</li>
+								<li><a href="https://www.amazon.com.br/">amazon</a></li>
+								<li><a href="https://www.mercadolivre.com.br/">mercado livre</a></li>
+								<li><a href="https://pt.aliexpress.com/?gatewayAdapt=glo2bra">aliexpress</a></li>
+								<li><a href="https://www.ebay.com/">ebay</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--
+			<div class="about">
+				<a href="https://github.com/Pav-Osmolski/startpage">pav-osmolski/startpage</a>
+			</div>
+			-->
+		</div>
+	</div>
+	<script src="assets/js/async-loader.js"></script>
+	<script src="/assets/js/image-random.js"></script>
+</body>
+
+</html>
