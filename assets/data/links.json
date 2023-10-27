@@ -1,0 +1,15 @@
+{
+    "links": {
+        "linkItem": [{
+                "bookMarkId": 0,
+                "title": "neptune",
+                "value": "neptune.local"
+            },
+            {
+                "bookMarkId": 1,
+                "title": "orion",
+                "value": "192.168.86.100"
+            }
+        ]
+    }
+}

@@ -10,6 +10,9 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicon/apple-touch-icon.png">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 </head>
 
 <body class="fade-in jquery search">
@@ -116,9 +119,24 @@
 			</div>
 			-->
 		</div>
+		<div class="linkManager linkManagerInvisible">
+			<span class="linkManagerContainer">
+				<span class="material-symbols-outlined">
+					<p class="close">close</p>
+				</span>
+				<ul class="linkList">
+					<li class="linkItem">
+						<p class="linkName"></p>
+						<div class="updateIcon"></div>
+						<deleteIcon></deleteIcon>
+					</li>
+				</ul>
+			</span>
+		</div>
 	</div>
 	<script src="assets/js/async-loader.js"></script>
 	<script src="/assets/js/image-random.js"></script>
+	<script src="/assets/js/link-manager.js"></script>
 </body>
 
 </html>

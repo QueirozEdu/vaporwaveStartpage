@@ -572,6 +572,34 @@ textarea:focus ~ span.blinking {
 	transform: translateX(-50%);
 	top: unset;
 }
+.linkManager {
+	border: 1px solid red;
+	position: absolute;
+
+	width: 35vw;
+	height: 40vh;
+	
+	align-self: center;
+	left: 35vw;	
+	top: 5vh;
+	transition: all ease-in-out 0.4s;
+}
+.linkManagerInvisible {
+	left: -200rem;
+
+}
+
+.close {
+	padding: 10px;
+	margin: -10px;
+	top: -3px
+}
+
+.blurBackground{
+	filter: blur(10px);
+	transition: all ease 0.8s;
+}
+
 
 /* Custom Scrollbar */
 html {

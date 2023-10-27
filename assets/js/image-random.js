@@ -1,5 +1,5 @@
 function imageRandomizer() {
-    let imageNumber = Math.floor(Math.random() * 11)
+    let imageNumber = Math.floor(Math.random() * 12)
 
     switch (imageNumber) {
         case 0:
