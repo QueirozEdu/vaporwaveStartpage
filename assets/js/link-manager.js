@@ -6,11 +6,26 @@ const background = document.querySelector(".container-inner");
 
 
 linkManagerToggleButton.addEventListener("click", () => {
-    background.classList.toggle("blurBackground")
+    background.classList.toggle("blurBackground");
     linkManager.classList.toggle("linkManagerInvisible");
-    closeButton.addEventListener("click", () => {
-        console.log("teste");
-        linkManager.classList.add("linkManagerInvisible")
+});
+closeButton.addEventListener("click", () => {
+    background.classList.toggle("blurBackground");
+    linkManager.classList.add("linkManagerInvisible")
 
-    });
 })
+
+const linkName = document.querySelector("#linkName");
+
+let linkData = 0;
+
+
+
+async function getData() {
+    let dataResponse = await fetch("../assets/js/data.json");
+    dataResponse = await dataResponse.json();
+    console.log(dataResponse[0].name);
+    linkName.innerText = dataResponse[0].name;
+    return dataResponse;
+}
+getData()

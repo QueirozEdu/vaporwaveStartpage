@@ -1,0 +1,21 @@
+[{
+        "name": "Neptune",
+        "url": "neptune.local"
+    },
+    {
+        "name": "Orion",
+        "url": "192.168.86.100"
+    },
+    {
+        "name": "Saturn",
+        "url": "192.168.86.9"
+    },
+    {
+        "name": "Jellyfin Dashboard",
+        "url": "192.168.86.100:8096"
+    },
+    {
+        "name": "Pi-Hole",
+        "url": "192.168.86.9/admin"
+    }
+]
